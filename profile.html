@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <!-- Left part of the navigation bar -->
+        <div class="navleft">
+            <a href="index.html">
+            <img class="img" id="logo" src="Images/logo.png" alt="logo"></a>
+            <ul>
+                <!-- Font Awesome icons for notifications, messages, and videos -->
+                <li><img src="Images/notification.png"></li>
+                <li><img src="Images/inbox.png"></li>
+                <li><img src="Images/video.png"></li>
+            </ul>
+        </div>
+        <!-- Right part of the navigation bar -->
+        <div class="nav-right">
+            <!-- Search box -->
+            <div class="search-box">
+                <img class="img" id="search-icon" src="Images/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <!-- User profile icon -->
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="Images/profilepic.png" alt="profile">
+            </div>
+        </div>
+
+        <!---------------------- Setting menu --------------------------------------->
+        <div class="settings-menu">
+
+
+          <div id="dark-btn" >
+            <span></span>
+          </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.png">
+                    <div>
+                        <p>Ash Kumar</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="Images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="Images/setting.png" class="setting-icons">
+                    <a href="#">Settings & Privacy</a><img src="Images/arrow.png" width="10px">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/help.png" class="setting-icons">
+                    <a href="#">help & Support</a><img src="Images/arrow.png" width="10px">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/display.png" class="setting-icons">
+                    <a href="#">Display & Accessibility</a><img src="Images/arrow.png" width="10px">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/logout.png" class="setting-icons">
+                    <a href="#">Log out</a><img src="Images/arrow.png" width="10px">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- navbar complete -->
+
+    <!--------------------- Profile page ================== -->
+
+     <div class="profile-container">
+        <img src="Images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+               <div class="pd-row">
+                <img src="Images/profile.png" class="pd-image" >
+                <div>
+                    <h3>Rahul Kumar</h3>
+                    <p>120 Friends - 20 mutual</p>
+                    <img src="Images/member-1.png">
+                    <img src="Images/member-2.png">
+                    <img src="Images/member-3.png">
+                    <img src="Images/member-4.png">
+                </div>
+               </div>
+            </div>
+            <div class="pd-right">
+                
+                <button type="button"><img src="Images/add-friends.png"> Friends</button>
+                <button type="button"><img src="Images/message.png" alt=""> Message</button>
+                <br>
+                <a href="#"><img src="Images/more.png" alt=""></a>
+            </div>
+        </div>
+        
+        <div class="profile-info">
+            <div class="info-col">
+
+
+               <div class="profile-intro">
+                 <h3>Intro</h3>
+                 <p class="intro-text">Believe in Your self and you can do unbelievable things. <img src="Images/feeling.png"></p>
+                <hr>
+                       
+                <ul>
+                    <li><img src="Images/profile-job.png"> Director at IGTR</li>
+                    <li><img src="Images/profile-study.png"> Studied at Pune University</li>
+                    <li><img src="Images/profile-study.png"> Went to HSES Chh. Sambhajinagar</li>
+                    <li><img src="Images/profile-home.png"> Lives in Mumbai , Maharashtra</li>
+                    <li><img src="Images/profile-location.png"> From Chh. Sambhajinagar</li>
+                </ul>
+
+                </div>
+
+                   <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="">All Photos</a>
+                    </div>
+
+                     <div class="photo-box">
+                        <div><img src="Images/photo1.png"></div>
+                        <div><img src="Images/photo2.png"></div>
+                        <div><img src="Images/photo3.png"></div>
+                        <div><img src="Images/photo4.png"></div>
+                        <div><img src="Images/photo5.png"></div>
+                        <div><img src="Images/photo6.png"></div>
+                     </div>
+                   </div>
+                   <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>120 (10 mutual)</p>
+                     <div class="friends-box">
+                        <div><img src="Images/member-1.png"> <p>Piya N</p></div>
+                        <div><img src="Images/member-2.png"> <p>Nayan D</p></div>
+                        <div><img src="Images/member-3.png"> <p> Gauri W</p></div>
+                        <div><img src="Images/member-4.png"> <p> Farhan P </p></div>
+                        <div><img src="Images/member-5.png"> <p> Akash B</p></div>
+                        <div><img src="Images/member-6.png"> <p> Mohini Y </p></div>
+                        <div><img src="Images/member-7.png"> <p> Elvish Y</p></div>
+                        <div><img src="Images/member-8.png"> <p> Bhavna D </p></div>
+                        <div><img src="Images/member-9.png"> <p> Jetha G </p></div>
+
+                     </div>
+                   </div>
+
+
+
+
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>Ash Kumar</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+    
+                    </div>
+    
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+    
+                        <div class="add-post-links">
+                            <a href="#"><img src="Images/live-video.png"> Live Video</a>
+                            <a href="#"><img src="Images/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="Images/feeling.png"> Feeling/Activity</a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Ash Kumar</p>
+                                <span>June 20 2023, 06:30 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+    
+    
+                    <p class="post-text">In the ever-changing world of social media, let's embrace the transformations and
+                        focus
+                        on fostering positivity in our digital interactions.
+                        <a href="#">#BeKindOnline</a> and cultivate meaningful <a href="#">#VirtualConnections</a> that
+                        uplift and inspire.
+                    </p>
+                    <img src="Images/feed-image-1.png" class="post-img">
+                    <div class="post-row">
+                        <div class="acitivity-icons">
+                            <div><img src="Images/like-blue.png"> 120</div>
+                            <div><img src="Images/comments.png"> 20</div>
+                            <div><img src="Images/share.png"> 5</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Raj Kumar</p>
+                                <span>June 20 2023, 07:43 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+    
+    
+                    <p class="post-text">Let's remember that despite our <a href="#">#physical distance</a>, we are united
+                        in the digital realm.
+                        As a global community, #TogetherWeRise, driving positive change and making an impact that knows no
+                        borders.
+                    </p>
+                    <img src="Images/feed-image-2.png" class="post-img">
+                    <div class="post-row">
+                        <div class="acitivity-icons">
+                            <div><img src="Images/like-blue.png"> 97</div>
+                            <div><img src="Images/comments.png"> 10</div>
+                            <div><img src="Images/share.png"> 15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Raj Kumar</p>
+                                <span>June 20 2023, 07:43 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+    
+    
+                    <p class="post-text">In the realm of social media,
+                        the possibilities are endless. <a href="#">#DreamBig</a>, unleash your creativity,
+                        and embrace <a href="#">#DigitalInnovation</a>, whether as an online entrepreneur
+                        or a passionate content creator.
+                    </p>
+                    <img src="Images/feed-image-3.png" class="post-img">
+                    <div class="post-row">
+                        <div class="acitivity-icons">
+                            <div><img src="Images/like-blue.png"> 97</div>
+                            <div><img src="Images/comments.png"> 10</div>
+                            <div><img src="Images/share.png"> 15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Raj Kumar</p>
+                                <span>June 20 2023, 07:43 am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+    
+    
+                    <p class="post-text">Amidst the vastness of the internet, let's remember the importance of building a
+                        strong #OnlineCommunity.
+                        Let's <a href="#SupportOneAnother"></a>, celebrate achievements, and offer a helping hand to those
+                        in need.
+                    </p>
+                    <img src="Images/feed-image-4.png" class="post-img">
+                    <div class="post-row">
+                        <div class="acitivity-icons">
+                            <div><img src="Images/like-blue.png"> 97</div>
+                            <div><img src="Images/comments.png"> 10</div>
+                            <div><img src="Images/share.png"> 15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Raj Kumar</p>
+                                <span>June 21 2023, 05:41 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </div>
+    
+    
+                    <p class="post-text">Let's remember that despite our physical distance, we are united in the digital
+                        realm.
+                        As a global community, <a href="#">#TogetherWeRise</a>, driving positive change and making an impact
+                        that knows no borders.
+                    </p>
+                    <img src="Images/feed-image-5.png" class="post-img">
+                    <div class="post-row">
+                        <div class="acitivity-icons">
+                            <div><img src="Images/like-blue.png"> 97</div>
+                            <div><img src="Images/comments.png"> 10</div>
+                            <div><img src="Images/share.png"> 15</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     </div>
+
+
+
+
+
+    <div class="footer">Copyright 2023</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
